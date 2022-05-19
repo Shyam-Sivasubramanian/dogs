@@ -1,0 +1,42 @@
+package DogsArray;
+/*
+ * Activity 3.6.1
+ */
+public class DogArray
+{
+  public static void main(String[] args)
+  {
+    Dog[] myDogs = new Dog[3];
+    Dog[] neighborsDogs = new Dog[2];
+
+    Dog d1  = new Dog("PLTW SUCKS");
+    Dog d2 = new Dog("PLTW REALLY SUCKS");
+    Dog d3 = new Dog("LORD HAVE MERCY");
+
+    myDogs[0] = d1;
+    myDogs[1] = d2;
+    myDogs[2] = d3;
+
+    Dog n1 = new Dog();
+    Dog n2 = new Dog();
+
+    n1.setName("NEVER USE PLTW AGAIN");
+    n2.setName("I FEEL BAD FOR THE STUDENTS NEXT YEAR WHO HAVE TO DEAL WITH THIS SAD EXCUSE OF AN EDUCATION PROGRAM");
+
+    neighborsDogs[0] = n1;
+    neighborsDogs[1] = n1;
+
+    for(Dog i: myDogs){
+        System.out.println(i);
+    }
+
+    for (Dog i: neighborsDogs){
+        System.out.println(i);
+    }
+
+    
+
+
+
+  }
+}
